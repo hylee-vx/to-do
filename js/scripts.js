@@ -16,4 +16,9 @@ function newItem() {
     li.toggleClass('strike');
   }
   li.on('dblclick', crossOut);
+
+  //adds delete button 'X'
+  const crossOutButton = $('<crossOutButton></crossOutButton>');
+  crossOutButton.append(document.createTextNode('X'));
+  li.append(crossOutButton);
 }
